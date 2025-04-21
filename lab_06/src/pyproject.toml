@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "lab-06"
+version = "0.1.0"
+description = "ESE Calculator"
+authors = ["Valeria Avdeykina <117504017+fleshbound@users.noreply.github.com>"]
+package-mode = false
+
+packages = [
+    { include = "cocomo", from = "cocomo" },
+    { include = "study", from = "study" },
+    { include = "constants", from = "cocomo" },
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.14"
+pyinstaller = "^6.12.0"
+matplotlib = "^3.10.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,2 +1,4 @@
 *.xls
 *.zip
+**/dist/
+**/build/
